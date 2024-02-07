@@ -11,14 +11,14 @@
         <p id="description">Congratulations for starting you journey. You got this!</p>
         <form id="survey-form" method="post" action="#">
             <fieldset>
-                <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Mohammed Kabir"/></label>
-                <label for="email" id="email-label">Email <input  id="email" type="email" placeholder="user_mail897@mailprovider.com"/></label>
+                <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Mohammed Kabir" required/></label>
+                <label for="email" id="email-label">Email <input  id="email" type="email" placeholder="user_mail897@mailprovider.com" required/></label>
                 <label for="number"  id="number-label">Years of Experience <input id="number" type="number" min="0" max="30" placeholder="3"/></label>
             </fieldset>
             <fieldset>
-                <label for="tech-background"> 
+                <label for="dropdown"> 
                 What's your background in Tech.?
-                <select id="tech-background">
+                <select id="dropdown">
                     <option value="">(Please Select)</option>
                     <option value="1">Student</option>
                     <option value="2">Hobbyist</option>
@@ -26,38 +26,38 @@
                     <option value="4">Prefer not to say</option>
                     <option value="5">Other</option>
                 </select>
-            </label>
+            </label for="bio">
             <label for="bio">Provide a short bio:
-                <textarea id="bio" name="bio" rows="3" cols="10" placeholder="My love computers and tech began in college!"></textarea>
+                <textarea id="bio" name="bio" rows="4" cols="10" placeholder="My love computers and tech began in college!"></textarea>
             </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="radio-checkbox-fieldset">
                 <legend>Are you able to commit for full-time or part-time?</legend>
-                <label for="full-time"><input type="radio" id="full-time" value="full-time" name="time-commitment"/> Full Time</label>
-                <label for="part-time"><input type="radio" id="part-time" value="full-time" name="time-commitment"/> Part Time</label>
+                <label for="full-time"><input class="inline" type="radio" id="full-time" value="full-time" name="time-commitment"/> Full Time</label>
+                <label for="part-time"><input class="inline" type="radio" id="part-time" value="full-time" name="time-commitment"/> Part Time</label>
             </fieldset>
-            <fieldset>
+            <fieldset  class="radio-checkbox-fieldset">
                 <legend>What are your professional interests in tech.?</legend>
-                <label for="it-administration"><input type="checkbox" id="it-administration" value="" name="tech-interest"/> IT Administration</label>
-                <label for="software-development-engineering"><input type="checkbox" id="software-development-engineering" value="" name="tech-interest"/> Software Development / Engineering</label>
-                <label for="devops"><input type="checkbox" id="devops" value="" name="tech-interest"/> DevOps</label>
-                <label for="cloud-computing"><input type="checkbox" id="cloud-computing" value="" name="tech-interest"/> Cloud Computing</label>
-                <label for="data-engineeing"><input type="checkbox" id="data-engineeing" value="" name="tech-interest"/> Data Engineering</label>
-                <label for="database-administration"><input type="checkbox" id="database-administration" value="" name="tech-interest"/> Database Administration</label>
-                <label for="business-analysis"><input type="checkbox" id="business-analysis" value="" name="tech-interest"/> Business Analysis</label>
-                <label for="technical-writing"><input type="checkbox" id="technical-writing" value="" name="tech-interest"/> Technical Writing</label>
-                <label for="project-management"><input type="checkbox" id="project-management" value="" name="tech-interest"/> Project Management</label>
+                <label for="it-administration"><input class="inline" type="checkbox" id="it-administration" value="it-administration" name="tech-interest"/> IT Administration</label>
+                <label for="software-development-engineering"><input class="inline"class="inline" type="checkbox" id="software-development-engineering" value="software-development-engineering" name="tech-interest"/> Software Development / Engineering</label>
+                <label for="devops"><input class="inline" type="checkbox" id="devops" value="devops" name="tech-interest"/> DevOps</label>
+                <label for="cloud-computing"><input class="inline" type="checkbox" id="cloud-computing" value="cloud-computing" name="tech-interest"/> Cloud Computing</label>
+                <label for="data-engineeing"><input  class="inline" type="checkbox" id="data-engineeing" value="data-engineeing" name="tech-interest"/> Data Engineering</label>
+                <label for="database-administration"><input class="inline" type="checkbox" id="database-administration" value="database-administration" name="tech-interest"/> Database Administration</label>
+                <label for="business-analysis"><input class="inline" type="checkbox" id="business-analysis" value="business-analysis" name="tech-interest"/> Business Analysis</label>
+                <label for="technical-writing"><input class="inline" type="checkbox" id="technical-writing" value="technical-writing" name="tech-interest"/> Technical Writing</label>
+                <label for="project-management"><input class="inline" type="checkbox" id="project-management" value="project-management" name="tech-interest"/> Project Management</label>
             </fieldset>
             <fieldset>
-                <label for="comments">Provide a short bio:
-                    <textarea id="bio" name="bio" rows="3" cols="max" placeholder="My love computers and tech began in college!"></textarea>
+                <label for="comments">Comments:
+                    <textarea id="comments" name="bio" rows="3" cols="max" placeholder="Please share your thoughts on how we can improve"></textarea>
                 </label>
             </fieldset>
             <label for="terms-and-conditions">
-                <input id="terms-and-conditions"  name="terms-and-conditions" type="checkbox" required />
+                <input id="terms-and-conditions" class="inline" name="terms-and-conditions" type="checkbox" required />
                 I accept the <a href="#">terms and conditions</a>
             </label>
-            <input type="submit" value="Submit" />
+            <input id="submit"  type="submit" value="Submit" />
         </form>
         
     </body>
